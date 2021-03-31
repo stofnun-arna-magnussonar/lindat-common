@@ -1,0 +1,22 @@
+---
+column1:
+  header: "Samstarfsaðilar, stjórn og fjármögnun"
+  items:
+  - 'https://www.arnastofnun.is/is': "Stofnun Árna Magnússonar"
+  - 'https://www.stjornarradid.is/raduneyti/mennta-og-menningarmalaraduneytid/': "Mennta- og menningarmálaráðuneytið"
+column2:
+  header: "Gagnagrunnur"
+  items:
+  - 'https://repository.clarin.is/repository/xmlui/?locale-attribute=is': "Aðalsíða"
+  - 'https://clarin.is': "Hafa samband"
+  - 'https://repository.clarin.is/repository/xmlui/page/item-lifecycle?locale-attribute=is': "Ferill gagnaskráningar"
+  - 'https://repository.clarin.is/repository/xmlui/page/faq?locale-attribute=is': "Algengar spurningar"
+  - 'https://repository.clarin.is/repository/xmlui/page/about?locale-attribute=is': "Markmið og stefna"
+column3:
+  header: "Meira"
+  items:
+  - 'http://www.clarin.eu/': "CLARIN"
+  - 'http://www.meta-net.eu/': "META-Net"
+footer:
+  - "Clarin verkefnið á Íslandi er stutt af Mennta- og menningarmálaráðuneytinu "
+copyright: "Copyright (c) 2019 Stofnun Árna Magnússonar. All rights reserved."

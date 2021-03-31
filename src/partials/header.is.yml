@@ -1,0 +1,17 @@
+---
+menu:
+- href: 'https://clarin.is/'
+#  class: clarin-is-logo
+  id: lindat-home-item
+  text: Heim
+- href: 'https://repository.clarin.is/repository/xmlui/?locale-attribute=is'
+  id: lindat-repository-item
+  text: Gagnagrunnur
+- href: 'https://clarin.is/en/about/'
+  id: clarin-about
+  text: Um Clarin á Íslandi
+- href: 'https://www.clarin.eu'
+  class: 'clarin-logo'
+  id: lindat-clarin-menu
+  text: CLARIN
+

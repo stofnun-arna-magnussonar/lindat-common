@@ -2,24 +2,24 @@ require('./main.less'); // Load CSS
 var $ = require('jquery');
 var Clipboard = require('clipboard');
 
-var shareButtons = [
-  {
-    name: 'facebook',
-    popup: {
-      url: 'http://www.facebook.com/sharer/sharer.php?u={uri}',
-      width: 600,
-      height: 500
-    }
-  },
-  {
-    name: 'twitter',
-    popup: {
-      url: 'http://twitter.com/intent/tweet?url={uri}&text={title}',
-      width: 600,
-      height: 450
-    }
-  }
-];
+// var shareButtons = [
+//   {
+//     name: 'facebook',
+//     popup: {
+//       url: 'http://www.facebook.com/sharer/sharer.php?u={uri}',
+//       width: 600,
+//       height: 500
+//     }
+//   },
+//   {
+//     name: 'twitter',
+//     popup: {
+//       url: 'http://twitter.com/intent/tweet?url={uri}&text={title}',
+//       width: 600,
+//       height: 450
+//     }
+//   }
+// ];
 
 /**
  * @param {String} url
@@ -141,6 +141,7 @@ RefBox.prototype.init = function () {
     done(function (data) {
       if (data.title) {
         refbox.title = data.title;
+        //console.log(data.title,data);
       }
 
       var exportFormats = data.exportFormats.exportFormat;
@@ -241,20 +242,20 @@ RefBox.prototype.init = function () {
         refbox.integrationContainer.remove();
       }
 
-      shareButtons.forEach(function (social) {
-        var popup = social.popup,
-          url = makeUrl(popup.url, refbox);
-
-        var el = $('<a></a>')
-          .attr('class', 'lindat-icon lindat-icon-' + social.name + ' lindat-share-' + social.name)
-          .attr('href', url)
-          .on('click', function (e) {
-            e.preventDefault();
-            window.open(url, refbox.title,
-              'height:' + popup.height + ',width:' + popup.width);
-          });
-        refbox.sharesContainer.append(el);
-      });
+      // shareButtons.forEach(function (social) {
+      //   var popup = social.popup,
+      //     url = makeUrl(popup.url, refbox);
+      //
+      //   var el = $('<a></a>')
+      //     .attr('class', 'lindat-icon lindat-icon-' + social.name + ' lindat-share-' + social.name)
+      //     .attr('href', url)
+      //     .on('click', function (e) {
+      //       e.preventDefault();
+      //       window.open(url, refbox.title,
+      //         'height:' + popup.height + ',width:' + popup.width);
+      //     });
+      //   refbox.sharesContainer.append(el);
+      // });
 
     })
     .fail(handleFailure);

@@ -5,13 +5,13 @@ require('./refbox');
 require('./lindat.less');
 
 var partials = {
-  cs: {
-    header: require('./partials/header.html?lang=cs'),
-    footer: require('./partials/footer.html?lang=cs')
-  },
-  en: {
+  'en': {
     header: require('./partials/header.html?lang=en'),
     footer: require('./partials/footer.html?lang=en')
+  },
+  'is': {
+    header: require('./partials/header.html?lang=is'),
+    footer: require('./partials/footer.html?lang=is')
   }
 };
 
@@ -100,8 +100,8 @@ function init() {
   var lang = localStorage.getItem('lang') || 'en';
   var project = localStorage.getItem('project') || 'lindat-home';
 
-  var handle = localStorage.getItem('handle') || '11234/1-1508';
-  var title = localStorage.getItem('title') || 'HamleDT 3.0';
+  var handle = localStorage.getItem('handle') || '20.500.12537/81';
+  var title = localStorage.getItem('title') || 'Clarin IS';
   var url  = localStorage.getItem('url') || '';
 
   injectStylesheets(url);

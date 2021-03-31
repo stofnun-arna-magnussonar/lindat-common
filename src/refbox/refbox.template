@@ -20,6 +20,8 @@
     <div class="lindat-format lindat-flexcol" style="display: none;">
     </div>
   </div>
+
+  <!--
   <div class="lindat-refbox-footer">
     <div class="lindat-refbox-integration" refbox-integrations>
       <div class="lindat-refbox-header">
@@ -30,9 +32,10 @@
       </div>
     </div>
     <div class="lindat-refbox-header">
-      <div class="lindat-icon lindat-header-icon lindat-icon-share"></div>
+       <div class="lindat-icon lindat-header-icon lindat-icon-share"></div>
       <h3>{{share}}</h3>
       <div class="lindat-refbox-shares" refbox-shares></div>
     </div>
   </div>
+  -->
 </div>

@@ -6,7 +6,7 @@ window.LindatRefBox = RefBox;
 $.fn.lindatRefBox = function (opts) {
   var options = $.extend({}, {
     //defaults
-    rest: 'https://lindat.mff.cuni.cz/repository/rest'
+    rest: 'https://repository.clarin.is/repository/rest'
   }, opts);
   var DATA_KEY = 'lindat-refbox';
   this.each(function () {

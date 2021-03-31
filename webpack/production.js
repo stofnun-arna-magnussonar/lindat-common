@@ -17,7 +17,7 @@ function getCommon(options) {
     output: {publicPath: options.publicPath},
     module: getCommonLoaders(options.src, options.globals),
     plugins: getCommonPlugins(options.src, options.globals)
-  }
+  };
 }
 
 function localizedRefboxConfigs(options) {
@@ -50,8 +50,8 @@ function localizedRefboxConfigs(options) {
   var partialsPlugins = [];
   ['header', 'footer'].forEach(function (file) {
     [false, true].forEach(function (standalone) {
-      [false, 'en', 'cs'].forEach(function (language) {
-        partialsPlugins.push(generatePartial(file, standalone, language))
+      [false, 'en', 'is'].forEach(function (language) {
+        partialsPlugins.push(generatePartial(file, standalone, language));
       });
     });
   });

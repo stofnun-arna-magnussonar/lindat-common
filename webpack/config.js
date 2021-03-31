@@ -14,10 +14,11 @@ var globals = {
     return rev;
   }(),
   VERSION: require('../package.json').version,
-  GA_TRACKING_CODE: 'UA-27008245-2',
-  PIWIK_URL: '//lindat.mff.cuni.cz/piwik/', // include trailing slash
-  REST_API: 'https://lindat.mff.cuni.cz/repository/rest',
-  DEV_REST_API: 'https://ufal-point-dev.ms.mff.cuni.cz/repository/rest'
+  GA_TRACKING_CODE: 'UA-175908272-1',
+  PIWIK_URL: '',  //'//lindat.mff.cuni.cz/piwik/', // include trailing slash
+  REST_API: 'https://repository.clarin.is/repository/rest' ,
+  DEV_REST_API: 'https://th29-pc03.rhi.hi.is/repository/rest',
+  //DEV_REST_API: 'https://repository.clarin.is/repository/rest',
 };
 
 module.exports = function(env, argv){
@@ -35,7 +36,7 @@ module.exports = function(env, argv){
     partials: path.join(root, 'src', 'partials'),
     publicPath: debug ? '/' :
                (pages ? 'https://ufal.github.io/lindat-common/' :
-                        'https://lindat.mff.cuni.cz/common/'),
+                        'https://th29-pc03.rhi.hi.is/common/'),
     globals: globals
   };
 

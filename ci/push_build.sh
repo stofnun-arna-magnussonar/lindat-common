@@ -10,8 +10,8 @@ set -o verbose
 GH_TOKEN=${GH_TOKEN:?'Must provide github token'}
 
 rev=$(git rev-parse --short HEAD)
-git_user="ÚFAL bot"
-git_email="lindat-technical@ufal.mff.cuni.cz"
+git_user="drengur"
+git_email="samuelth@hi.is"
 
 BRANCH=edge
 COMMIT_MSG="Build based on ${rev}"

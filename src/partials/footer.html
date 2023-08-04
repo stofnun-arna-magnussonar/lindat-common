@@ -13,13 +13,19 @@
   {%- endfor -%}
   </ul>
 {%- endmacro %}
+{%- macro makeLeftmostColumn(column) -%}
+<ul>
+  {%- for items in column.items -%}
+  <li><a class={{items.class}} href="{{items.href}}"></a></li>
+  {%- endfor -%}
+</ul>
+{%- endmacro %}
+
 <div class="lindat-common lindat-footer" data-version="{{VERSION}}" data-build="{{REV}}">
   <div class="lindat-footer-main">
     <div class="lindat-footer-content lindat-container">
       <div class="lindat-footer-left">
-<!--        <a class="lindat-clarinb-logo" href="http://hdl.handle.net/1839/00-DOCS.CLARIN.EU-99" title="Clarin B Center"> </a>-->
-<!--        <a class="lindat-cts-logo" href="https://www.coretrustseal.org/wp-content/uploads/2019/08/LINDAT-CLARIN.pdf" title="Core Trust Seal"> </a>-->
-<!--        <a class="lindat-clarink-logo" href="http://hdl.handle.net/1839/00-DOCS.CLARIN.EU-114" title="Clarin K Center"> </a>-->
+        {{makeLeftmostColumn(leftmostColumn)}}
       </div>
       <div class="lindat-footer-text">
         <div class="lindat-footer-text1">
@@ -51,7 +57,6 @@
   {% if angular %}
   <ngp-piwik ngp-set-js-url="{{PIWIK_URL}}piwik.js"> </ngp-piwik>
   {% else %}
-
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async="async" src="https://www.googletagmanager.com/gtag/js?id={{GA_TRACKING_CODE}}"></script>
   <script>
@@ -60,8 +65,6 @@
     gtag('js', new Date());
     gtag('config', "{{GA_TRACKING_CODE}}");
   </script>
-
-
   <!-- End Piwik Code -->
   {% endif %}
   <!-- End TRACKING CODE -->

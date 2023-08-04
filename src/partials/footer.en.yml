@@ -1,9 +1,13 @@
 ---
+imgColumn:
+  items:
+  - 'lindat-clarinb-logo': "https://www.clarin.eu/content/certified-b-centres"
+  - 'lindat-cts-logo': "https://office.clarin.eu/v/CE-2023-2285-2023-06-22-Arni-Magnusson-Institute-for-Icelandic-Studies-Clarin-Center-at-the-Arni-Magnusson-Insitute-for-Icelandic-Studies_final.pdf"
 column1:
   header: "Partners, Coordination, Funding"
   items:
-  - 'https://www.arnastofnun.is/en': "Arni Magnusson Institute"
-  - 'https://www.government.is/ministries/ministry-of-education-science-and-culture/': "Ministry of Education, Science and Culture"
+  - 'https://www.arnastofnun.is/en': "Arni Magnusson Institute for Icelandic Studies"
+  - 'https://www.government.is/ministries/ministry-of-education-science-and-culture/': "Ministry of Culture and Business Affairs"
 column2:
   header: "Repository"
   items:
@@ -17,5 +21,5 @@ column3:
   - 'http://www.clarin.eu/': "CLARIN"
   - 'http://www.meta-net.eu/': "META-Net"
 footer:
-  - "CLARIN-IS IS FULLY SUPPORTED BY THE MINISTRY OF EDUCATION, SCIENCE and CULTURE"
-copyright: "Copyright (c) 2019 Stofnun Árna Magnússonar. All rights reserved."
+  - "CLARIN-IS is fully supported by the Ministry of Culture and Business Affairs"
+copyright: 'Copyright (c) 2023. Arni Magnusson Institute for Icelandic Studies. All rights reserved.'

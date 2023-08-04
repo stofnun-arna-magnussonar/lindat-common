@@ -1,11 +1,15 @@
 ---
+leftmostColumn:
+  items:
+  - 'lindat-clarinb-logo': "https://www.clarin.eu/content/certified-b-centres"
+  - 'lindat-cts-logo': "https://office.clarin.eu/v/CE-2023-2285-2023-06-22-Arni-Magnusson-Institute-for-Icelandic-Studies-Clarin-Center-at-the-Arni-Magnusson-Insitute-for-Icelandic-Studies_final.pdf"
 column1:
   header: "Samstarfsaðilar, stjórn og fjármögnun"
   items:
-  - 'https://www.arnastofnun.is/is': "Stofnun Árna Magnússonar"
-  - 'https://www.stjornarradid.is/raduneyti/mennta-og-menningarmalaraduneytid/': "Mennta- og menningarmálaráðuneytið"
+  - 'https://www.arnastofnun.is/is': "Stofnun Árna Magnússonar í Íslenskum fræðum"
+  - 'https://www.stjornarradid.is/raduneyti/menningar-og-vidskiptaraduneytid/': "Menningar- og viðskiptaráðuneytið"
 column2:
-  header: "Gagnagrunnur"
+  header: "Gagnasafn"
   items:
   - 'https://repository.clarin.is/repository/xmlui/?locale-attribute=is': "Aðalsíða"
   - 'https://clarin.is': "Hafa samband"
@@ -18,5 +22,5 @@ column3:
   - 'http://www.clarin.eu/': "CLARIN"
   - 'http://www.meta-net.eu/': "META-Net"
 footer:
-  - "Clarin verkefnið á Íslandi er stutt af Mennta- og menningarmálaráðuneytinu "
-copyright: "Copyright (c) 2019 Stofnun Árna Magnússonar. All rights reserved."
+  - "CLARIN verkefnið á Íslandi er stutt af Mennta- og menningarmálaráðuneytinu "
+copyright: 'Copyright (c) 2023. Stofnun Árna Magnússonar í íslenskum fræðum. Allur réttur áskilinn.'

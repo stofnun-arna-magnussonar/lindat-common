@@ -6,10 +6,10 @@ menu:
   text: Heim
 - href: 'https://repository.clarin.is/repository/xmlui/?locale-attribute=is'
   id: lindat-repository-item
-  text: Gagnagrunnur
+  text: Gagnasafn
 - href: 'https://clarin.is/en/about/'
   id: clarin-about
-  text: Um Clarin á Íslandi
+  text: Um CLARIN á Íslandi
 - href: 'https://www.clarin.eu'
   class: 'clarin-logo'
   id: lindat-clarin-menu

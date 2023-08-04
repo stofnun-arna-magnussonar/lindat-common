@@ -9,7 +9,7 @@ menu:
   text: Repository
 - href: 'https://clarin.is/en/about/'
   id: clarin-about
-  text: About Clarin-IS
+  text: About CLARIN-IS
 - href: 'https://www.clarin.eu'
   class: 'clarin-logo'
   id: lindat-clarin-menu

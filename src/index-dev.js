@@ -100,8 +100,8 @@ function init() {
   var lang = localStorage.getItem('lang') || 'en';
   var project = localStorage.getItem('project') || 'lindat-home';
 
-  var handle = localStorage.getItem('handle') || '20.500.12537/81';
-  var title = localStorage.getItem('title') || 'Clarin IS';
+  var handle = localStorage.getItem('handle') || '20.500.12537/184';
+  var title = localStorage.getItem('title') || 'CLARIN-IS';
   var url  = localStorage.getItem('url') || '';
 
   injectStylesheets(url);

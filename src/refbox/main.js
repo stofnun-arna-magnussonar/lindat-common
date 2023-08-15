@@ -3,22 +3,22 @@ var $ = require('jquery');
 var Clipboard = require('clipboard');
 
 // var shareButtons = [
-//   {
-//     name: 'facebook',
-//     popup: {
-//       url: 'http://www.facebook.com/sharer/sharer.php?u={uri}',
-//       width: 600,
-//       height: 500
-//     }
-//   },
-//   {
-//     name: 'twitter',
-//     popup: {
-//       url: 'http://twitter.com/intent/tweet?url={uri}&text={title}',
-//       width: 600,
-//       height: 450
-//     }
-//   }
+  // {
+  //   name: 'facebook',
+  //   popup: {
+  //     url: 'http://www.facebook.com/sharer/sharer.php?u={uri}',
+  //     width: 600,
+  //     height: 500
+  //   }
+  // },
+  // {
+  //   name: 'twitter',
+  //   popup: {
+  //     url: 'http://twitter.com/intent/tweet?url={uri}&text={title}',
+  //     width: 600,
+  //     height: 450
+  //   }
+  // }
 // ];
 
 /**
@@ -49,7 +49,7 @@ function dropdownToggle(dropdownList) {
     .addClass('lindat-button lindat-dropdown-toggle')
     .attr('type', 'button')
     .append($('<span></span>').addClass('lindat-dropdown-caret'))
-    .click(function () {
+    .on('click', function () {
       if (isOpened) {
         closeDropdown();
       } else {
@@ -77,7 +77,6 @@ function RefBox(container, options) {
   if (!(refbox instanceof RefBox)) {
     return new RefBox(container, options);
   }
-
   // Init all options from the container element or options object
   ['handle', 'title'].forEach(function (name) {
     if (options[name]) {
@@ -107,7 +106,6 @@ function RefBox(container, options) {
 
   //should be used only as failsafe when rest does not return anything.
   refbox.uri = 'http://hdl.handle.net/' + refbox.handle;
-
   refbox.requestQueue = [];
   refbox.text = refbox.body.find('[refbox-text]');
   refbox.copyButton = refbox.body.find('[refbox-copy-button]');
@@ -118,9 +116,8 @@ function RefBox(container, options) {
 }
 
 RefBox.prototype.init = function () {
-  var refbox = this,
-    textNode = refbox.text,
-    copyButton = refbox.copyButton;
+  var refbox = this;
+  var textNode = refbox.text;
 
   function handleFailure() {
     textNode.empty().html("<a href='" + refbox.uri + "'>" + refbox.uri + "</a>");
@@ -141,9 +138,7 @@ RefBox.prototype.init = function () {
     done(function (data) {
       if (data.title) {
         refbox.title = data.title;
-        //console.log(data.title,data);
       }
-
       var exportFormats = data.exportFormats.exportFormat;
       if (exportFormats && exportFormats.length > 0) {
         exportFormats.forEach(function (format) {
@@ -244,8 +239,7 @@ RefBox.prototype.init = function () {
 
       // shareButtons.forEach(function (social) {
       //   var popup = social.popup,
-      //     url = makeUrl(popup.url, refbox);
-      //
+      //   url = makeUrl(popup.url, refbox);
       //   var el = $('<a></a>')
       //     .attr('class', 'lindat-icon lindat-icon-' + social.name + ' lindat-share-' + social.name)
       //     .attr('href', url)

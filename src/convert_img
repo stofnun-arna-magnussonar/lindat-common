@@ -1,7 +1,0 @@
-#! /bin/bash
-
-bg=$(convert images/Clarin_B-Centre.png -format "%[pixel:p{0,0}]" info:)
-convert images/Clarin_B-Centre.jpg -crop +10+12 -crop -8-8 images/Clarin_B-Centre.png
-convert images/Clarin_B-Centre.png -resize 176 -fuzz 20% -transparent "$bg" images/clarinb-centre.png
-
-

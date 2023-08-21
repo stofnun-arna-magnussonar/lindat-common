@@ -1,5 +1,5 @@
 ---
-imgColumn:
+leftmostColumn:
   items: {
     '1': {'class': 'lindat-clarinb-logo', 'href': 'http://hdl.handle.net/11372/DOC-169'}
    ,'2': {'class': 'lindat-cts-logo', 'href': 'https://office.clarin.eu/v/CE-2023-2285-2023-06-22-Arni-Magnusson-Institute-for-Icelandic-Studies-Clarin-Center-at-the-Arni-Magnusson-Insitute-for-Icelandic-Studies_final.pdf'}

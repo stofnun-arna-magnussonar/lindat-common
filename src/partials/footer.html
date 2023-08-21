@@ -16,7 +16,7 @@
 {%- macro makeLeftmostColumn(column) -%}
 <ul>
   {%- for items in column.items -%}
-  <li><a class={{items.class}} href="{{items.href}}"></a></li>
+  <li><a class="{{items.class}}" href="{{items.href}}"></a></li>
   {%- endfor -%}
 </ul>
 {%- endmacro %}
@@ -25,7 +25,8 @@
   <div class="lindat-footer-main">
     <div class="lindat-footer-content lindat-container">
       <div class="lindat-footer-left">
-        {{makeLeftmostColumn(leftmostColumn)}}
+        <a class="lindat-clarinb-logo" target="_blank" href="http://hdl.handle.net/11372/DOC-169" title="Clarin B Center"> </a>
+        <a class="lindat-cts-logo" target="_blank" href="https://office.clarin.eu/v/CE-2023-2285-2023-06-22-Arni-Magnusson-Institute-for-Icelandic-Studies-Clarin-Center-at-the-Arni-Magnusson-Insitute-for-Icelandic-Studies_final.pdf" title="Core Trust Seal"> </a>
       </div>
       <div class="lindat-footer-text">
         <div class="lindat-footer-text1">

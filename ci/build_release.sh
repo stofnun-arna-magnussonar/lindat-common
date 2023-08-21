@@ -2,7 +2,7 @@
 
 set -e
 
-: ${TRAVIS:?'This should only be run on Travis CI'}
+# : ${TRAVIS:?'This should only be run on Travis CI'}
 
 npm run build
 npm run build-pages

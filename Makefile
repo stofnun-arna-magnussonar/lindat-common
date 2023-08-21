@@ -20,3 +20,9 @@ release-minor:
 
 release-major:
 				@./node_modules/.bin/mversion major
+
+distribution:
+				@echo "********************************************************"
+				@echo "* building distribution files (dist.zip & dist.tar.gz) *"
+				@echo "********************************************************"
+				./ci/build_release.sh
